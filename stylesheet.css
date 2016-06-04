@@ -11,6 +11,10 @@
             a {
                 text-decoration: none;
             }
+        
+.exp img,#imagecircle{
+    opacity: 0;
+}
 
             a:link,
             a:visited {
@@ -197,6 +201,18 @@
 
         }
 
+
+        #seminars{
+            
+                background-color: white;
+                border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding: 3% 5%;
+                margin-top: 2%;
+            
+        }
+
     div#contactformarea{
         background-color: antiquewhite;
         border-radius: 4px;
@@ -239,6 +255,23 @@
 
             .mainfooter img{
                 float: right;
+            }
+
+            #fb {
+            margin-left: 5px;
+            }
+
+            #linked{
+                margin-left: 5px;
+            }
+            
+            #top{
+                width: 40px;
+                height: 40px;
+                background-color: blue;
+                float: right;
+                //position: fixed;
+                
             }
 
             .mainfooter {
