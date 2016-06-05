@@ -57,6 +57,7 @@ jQuery(document).ready(function () {
                 scrollTop: jQuery("#" + sectionid).offset().top
 
             }, 2000);
+            e.preventDefault();
         });
     }
     // navigate ends here
@@ -79,21 +80,31 @@ jQuery(document).ready(function () {
     //header static ends here
 
 
-    //moving tab start
+    //back to top starts here
     var divOffset = jQuery("#educationlink").offset().top;
+    jQuery(".top").click(function(e1){
+       jQuery("html,body").animate({
+        scrollTop:0   
+       },1000);
+        e1.preventDefault();
+    });
     jQuery(window).scroll(function () {
         //var scrollPosition = jQuery(window).scrollTop();
-
-        if (windowScrollPosTop >= divOffset) { //windowScrollPosTop is declared on top
-            //alert('matched');
-            jQuery("nav ul li #education").addClass(".active");
-        } else {
-            jQuery("nav ul li #education").removeClass(".active");
+        
+        if(windowScrollPosTop >= divOffset){
+          if(!jQuery(".top").is(":visible")){
+              jQuery(".top").fadeIn();
+              
+          }  
         }
+        else{
+            jQuery(".top").hide();
+        } 
+            
+        
     });
 
-
-    //moving tab end
+    //back to top ends here
 
 
 
