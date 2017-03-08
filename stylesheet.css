@@ -17,6 +17,10 @@ a {
     opacity: 0;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 a:link,
 a:visited {
     color: aqua;
